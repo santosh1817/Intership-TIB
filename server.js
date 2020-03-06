@@ -1,6 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-var serveStatic = require('serve-static');
 const serveStatic = require('serve-static');
 const path = require('path');
 
@@ -12,7 +11,7 @@ const app = express();
 
 //const port =5000
 
-const port = process.env.PORT;
+//port = process.env.PORT;
 
 var distDir = __dirname + '/dist/';
 app.use(express.static(distDir));
@@ -25,7 +24,7 @@ app.use(cors());
 
 app.use('/', serveStatic(path.join(__dirname, '/dist')));
 app.get(/.*/, function(req, res) {
-  res.sendFile(path.join(__dirname, '/dist/index.html'));
+//res.sendFile(path.join(__dirname, '/dist/index.html'));
 });
 app.use('/', routes);
 
