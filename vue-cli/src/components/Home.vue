@@ -23,7 +23,7 @@ import router from './router'
       </div>
     </nav>
     <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
+      <h1 class="display-4">Hello, world! It's my first site hosted</h1>
       <p class="lead">This is a Tour Itinerary Builder app, built using MEVN stack</p>
       <hr class="my-4" />
       <p></p>
